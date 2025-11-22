@@ -792,7 +792,14 @@ i{
         padding-top: 120px;
     }
 
+    /* خلي النص الأول */
+    .hero-text {
+        order: 1;
+    }
+
+    /* الكارد بعده */
     .hero-card {
+        order: 2;
         position: relative;
         width: 90%;
         left: 0;
@@ -802,7 +809,7 @@ i{
     }
 
     .hero-card::before {
-        display: none; /* الحبل يختفي على الموبايل */
+        display: none;
     }
 
     .hero-card img {
@@ -831,6 +838,7 @@ i{
     .about-section {
         background-position: center bottom;
         background-size: 300px;
+        background: none;
         padding-bottom: 300px;
     }
 
