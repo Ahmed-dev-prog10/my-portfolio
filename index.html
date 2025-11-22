@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/londing.css">
+</head>
+<body>
+
+    <div class="hero">
+
+        <div class="card">
+
+            <!-- SVG المسؤول عن خط الطاقة اللي بيلف حولين الكارد -->
+            <svg class="energy-border" viewBox="0 0 300 400" preserveAspectRatio="none">
+
+                <defs>
+                    <!-- تدرّج ألوان الطاقة -->
+                    <linearGradient id="energy-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" stop-color="cyan" />
+                        <stop offset="50%" stop-color="white" />
+                        <stop offset="100%" stop-color="cyan" />
+                    </linearGradient>
+
+                    <!-- فلتر التوهج Glow -->
+                    <filter id="glow">
+                        <feGaussianBlur stdDeviation="4" result="blur"/>
+                        <feMerge>
+                            <feMergeNode in="blur"/>
+                            <feMergeNode in="SourceGraphic"/>
+                        </feMerge>
+                    </filter>
+                </defs>
+
+                <!-- مسار خط الطاقة اللي بيلف حول الكارد -->
+                <path 
+                    d="
+                        M 20 20
+                        H 280
+                        Q 290 20 290 30
+                        V 370
+                        Q 290 380 280 380
+                        H 20
+                        Q 10 380 10 370
+                        V 30
+                        Q 10 20 20 20
+                    "
+                    fill="none"
+                    stroke="url(#energy-gradient)"
+                    stroke-width="3"
+                    filter="url(#glow)"
+                    stroke-linejoin="round"
+                    stroke-linecap="round"
+                    stroke-dasharray="120 40"
+                    stroke-dashoffset="0">
+
+                    <!-- الأنيميشن اللي بيخلي الشرارة تلف -->
+                    <animate 
+                        attributeName="stroke-dashoffset"
+                        from="0"
+                        to="-600"
+                        dur="5s"
+                        repeatCount="indefinite"/>
+                </path>
+
+            </svg>
+
+            <p>Welcome To My</p>
+            <span>Portfolio</span>
+        </div>
+
+        <!-- صورة البوابة -->
+        <div class="portal">
+            <img src="imge/port.png" class="img">
+        </div>
+
+        <!-- زر الدخول -->
+       <a href="intro.html"> <button class="btn">Come In</button></a>
+
+    </div>
+
+</body>
+</html>

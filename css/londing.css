@@ -1,0 +1,170 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* خلفية الصفحة */
+.hero {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* النص في المنتصف */
+    align-items: center;
+    gap: 25px;
+    padding: 20px 0;
+    background-color: rgba(2, 19, 27, 1);
+}
+
+/* الكارد الأساسي */
+.card {
+    width: 300px;
+    padding: 20px;
+    position: relative; /* عشان SVG يكون فوقه */
+    text-align: center;
+
+    background: rgba(255,255,255,0.06);
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+    border: 2px solid rgba(0,255,255,0.3);
+}
+
+/* SVG المسؤول عن الشرارة اللي بتمشي حول الكارد */
+.energy-border {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow: visible;
+}
+
+/* (مش مستخدم في المسار الحالي لكنه باقِ عندك) */
+.energy-border rect {
+    fill: none;
+    stroke: cyan;
+    stroke-width: 2px;
+    stroke-linejoin: round;
+
+    filter: drop-shadow(0 0 20px cyan) drop-shadow(0 0 40px cyan);
+
+    stroke-dasharray: 480;
+    stroke-dashoffset: 480;
+    animation: borderEnergy 4s linear infinite;
+}
+
+/* حركة شرارة الطاقة */
+@keyframes borderEnergy {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/* نص الكارد */
+.card p,
+.card span {
+    font-size: 26px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    background: linear-gradient(90deg,
+        #00f6ff 0%,
+        #7cffb2 25%,
+        #8aa7ff 100%);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+/* الصورة الرئيسية */
+.portal {
+    width: 40vw;
+    max-width: 400px;
+    position: relative;
+}
+
+/* توهج ضوئي فوق البوابة */
+.portal::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+
+    clip-path: polygon(50% 100%, 0 0, 100% 0);
+
+    background: linear-gradient(
+        to bottom,
+        rgba(0, 255, 255, 0) 0%,
+        rgba(0, 255, 255, 0.6) 50%,
+        rgba(0, 255, 255, 0) 100%
+    );
+
+    filter: blur(60px);
+    opacity: 1;
+    animation: beamGlow 2.5s infinite ease-in-out;
+}
+
+/* نبض التوهج */
+@keyframes beamGlow {
+    0% { opacity: 0.3; }
+    50% { opacity: 1; }
+    100% { opacity: 0.3; }
+}
+
+/* الصورة داخل البوابة */
+.img {
+    width: 100%;
+    height: 100%;
+}
+
+/* زر الدخول */
+.btn {
+    padding: 15px 35px;
+    font-size: 18px;
+    text-transform: uppercase;
+
+    background: linear-gradient(#0ff, #0aa);
+    border: none;
+    border-radius: 12px;
+
+    cursor: pointer;
+    box-shadow: 0 5px 0 #066;
+
+    font-weight: bold;
+    position: relative;
+}
+
+/* لمعان بيمر فوق الزر */
+.btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 100%;
+    border-radius: 12px;
+
+    background: linear-gradient(
+        120deg,
+        transparent 20%,
+        rgba(255, 255, 255, 0.8) 50%,
+        transparent 50%
+    );
+
+    /* لمعان يتحرك من اليسار لليمين */
+    animation: shine 2s infinite alternate ease-in-out;
+    pointer-events: none;
+}
+
+/* حركة لمعان الزر */
+@keyframes shine {
+    to {
+        width: 100%;
+    }
+}
+
+/* حركة الضغط */
+.btn:active {
+    transform: scale(0.95);
+}

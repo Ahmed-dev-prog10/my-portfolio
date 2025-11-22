@@ -1,0 +1,437 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahmed Helal</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+                 <a href="file/Ahmed_Helal_CV.pdf" download class="btn btn-outline-info mt-2">
+                  Download <span class="cv">CV</span></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto ">
+                    <li class="nav-item kk ">
+                        <a class="nav-link a" href="#home">
+                            <i class="fa fa-home"></i>Home
+                        </a>
+                    </li>
+                      <li class="nav-item kk ">
+                        <a class="nav-link a" href="#about">
+                            <i class="fa fa-user"></i>About me
+                        </a>
+                    </li>
+                    <li class="nav-item ">
+                       <a class="nav-link a" href="#education">
+                         <i class="fa fa-award"></i>Education
+                           
+                       </a>
+                    </li>
+                    <li class="nav-item ">
+                     <a class="nav-link a" href="#skills">
+                        <i class="fa fa-code"></i>skills                        
+                     </a>
+                    </li>
+                    <li class="nav-item ">
+                     <a class="nav-link a" href="#projects">
+                        <i class="fa fa-chart-bar"></i>Projects                        
+                     </a>
+                    </li>
+                    <li class="nav-item ">
+                     <a class="nav-link a" href="#contact">
+                        <i class="fa fa-phone"></i>Contact
+                        
+                     </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="container hero-section d-flex justify-content-between align-items-center">
+        
+        <!-- Draggable Hero Card -->
+         <div class="hero-card" id="heroCard">
+            <div class="img">
+            <img src="imge/me3.png" alt="Your Photo">
+            </div>
+            <div class="info">
+                <h3><span>Name:</span> Ahmed Helal</h3>
+                <h3><span>Job:</span> Full Stack Developer</h3>
+            </div>
+         </div>
+        <!-- Animated Text -->
+        <div class="hero-text">
+            <h2>hey!welcome to my world of code  </h2>
+            <p class="typing">bulding semless experiences,one line of code at time.</p>
+        </div>
+    </section>
+   <section id="about" class="about-section">
+    <div class="about-content">
+        <h2>About Me</h2>
+        <p>
+            I'm a Full-Stack Web Developer who enjoys building clean, functional, and fast web applications from scratch.
+            I’ve worked with the core front-end 
+            technologies:<span>  HTML, CSS, JavaScript, Vue.js, and Bootstrap</span>
+            , and I know how to turn any design into a responsive, smooth user experience.
+            <br><br>
+            On the back-end side, I'm comfortable working with 
+            <span> PHP, MySQL, and the Laravel framework to build secure</span>, scalable, and well-structured systems.
+            I understand how both sides of the web connect, and I enjoy creating full solutions that cover everything from the UI to the database.
+            <br><br>
+            Right now, I'm focused on leveling up my skills, building real projects, and growing into a professional full-stack developer with a strong portfolio.
+        </p>
+    </div>
+</section>
+
+
+
+<section id="education" class="section-container">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Courses & Certifications</h2>
+        <div class="row g-4">
+
+            <!-- Card 1 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>IT Specialization</h3>
+                    <ul>
+                        <li>Al-Azhar University certification</li>
+                        <li>Computer Systems & Simulation</li>
+                        <li>Awarded Excellent grade</li>
+                        <li>Strong analytical skills</li>
+                    </ul>
+                    <img src="imge/c2.jpg" alt="Course 1 Image">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c2.jpg')">View Image</button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>Full-Stack Web Development</h3>
+                    <ul>
+                        <li>Full-Stack development training</li>
+                        <li>HTML, CSS, JS, Vue.js, PHP, MySQL, Laravel</li>
+                        <li>Front-end & back-end development</li>
+                        <li>Real-world application training</li>
+                    </ul>
+                    <img src="imge/c4.jpg" alt="Course 2 Image">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c4.jpg')">View Image</button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>Work Ethics & Skills</h3>
+                    <ul>
+                        <li>Professional workplace skills training</li>
+                        <li>Awarded Excellent grade</li>
+                        <li>Strong communication & teamwork</li>
+                        <li>High professional responsibility</li>
+                    </ul>
+                    <img src="imge/c1.jpg" alt="Course 3 Image">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c1.jpg')">View Image</button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>Labor Market Skills</h3>
+                    <ul>
+                        <li>Labor market oriented training</li>
+                        <li>Soft skills, computing & business basics</li>
+                        <li>Awarded Excellent grade</li>
+                        <li>Supports career advancement</li>
+                    </ul>
+                    <img src="imge/c3.jpg" alt="Course 4 Image">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c3.jpg')">View Image</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="section-container">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Skills</h2>
+
+    <div class="skills-grid">
+
+      <!-- Front End -->
+      <div class="skill-card">
+        <h3>Front-End</h3>
+
+        <div class="progress-item" data-value="95">
+          <span class="label">HTML</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="95">
+          <span class="label">CSS</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="80">
+          <span class="label">JavaScript</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+        <div class="progress-item" data-value="85">
+          <span class="label">Bootstrap</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="75">
+          <span class="label">Vue.js</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+      </div>
+        
+
+      <!-- Back End -->
+      <div class="skill-card">
+        <h3>Back-End</h3>
+
+        <div class="progress-item" data-value="90">
+          <span class="label">PHP</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="85">
+          <span class="label">MySQL</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="80">
+          <span class="label">Laravel</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card">
+        <h3>Soft Skills</h3>
+
+        <div class="progress-item" data-value="95">
+          <span class="label">Communication</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="90">
+          <span class="label">Problem Solving</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="85">
+          <span class="label">Time Management</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+  <h2 class="section-title">Projects</h2>
+
+  <div class="projects-grid">
+
+    <!-- Project 1 -->
+    <div class="project-card">
+      <img src="imge/book.png" alt="">
+      <div class="project-info">
+        <h3>Modern Portfolio Website</h3>
+        <p>A responsive portfolio using HTML, CSS, JS & PHP.</p>
+        <div class="actions">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="project-card">
+      <img src="imge/bg5.jpg" alt="">
+      <div class="project-info">
+        <h3>Landing Page</h3>
+        <p>Cyber style landing page with neon effects.</p>
+        <div class="actions">
+          <a href="#" class="btn">Live Demo</a>
+          <a href="#" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat... -->
+
+  </div>
+</section>
+
+    <!-- Contact Section -->
+<section id="contact" class="section-container">
+  <div class="container">
+
+    <h2 class="section-title text-center mb-5">
+      Let’s Work Together
+    </h2>
+
+    <div class="contact-grid">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-left">
+
+        <div class="profile-img">
+          <img src="imge/me3.png" alt="Your Photo">
+        </div>
+
+        <div class="social-list">
+
+          <a href="tel:01060838356" class="social">
+            <i class="fas fa-phone"></i>
+          </a>
+
+          <a href="https://wa.me/01060838356" target="_blank" class="social">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="https://www.instagram.com/10ah_m_ed?igsh=MWQwam83cmp1MHEweQ==" target="_blank" class="social">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ahmed-mahmoud-helal-769753398/" target="_blank" class="social">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/Ahmed-dev-prog10" target="_blank" class="social">
+            <i class="fab fa-github"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE – EMAIL FORM -->
+      <form class="contact-form" 
+            action="mailto:YOUR_EMAIL@example.com" 
+            method="POST"
+            enctype="text/plain">
+
+        <div class="form-group">
+          <input type="text" placeholder="Your Name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" placeholder="Email Address" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <textarea placeholder="Your Message" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">Send Message</button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+    <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn">&#8679;</button>
+<footer class="main-footer">
+  <div class="container footer-grid">
+
+    <!-- LOGO OR NAME -->
+    <div class="footer-brand">
+      <h3>Ahmed Helal</h3>
+      <p>Full-Stack Web Developer</p>
+    </div>
+
+    <!-- ICON LINKS -->
+    <ul class="footer-links-icons">
+
+      <li>
+        <a href="#home">
+          <i class="fas fa-house"></i>
+        </a>
+      </li>
+<li>
+        <a href="#about">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#skills">
+          <i class="fas fa-code"></i>
+        </a>
+      </li>
+  <li class="nav-item ">
+                       <a class="nav-link a" href="#education">
+                         <i class="fa fa-award"></i>
+                           
+                       </a>
+                    </li>
+      <li>
+        <a href="#projects">
+          <i class="fas fa-chart-bar"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact">
+          <i class="fas fa-phone"></i>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+
+      <a href="tel:01060838356">
+        <i class="fas fa-phone"></i>
+      </a>
+
+      <a href="https://wa.me/01060838356" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.instagram.com/10ah_m_ed?igsh=MWQwam83cmp1MHEweQ==" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ahmed-mahmoud-helal-769753398/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Ahmed-dev-prog10" target="_blank">
+        <i class="fab fa-github"></i>
+ </a>
+ </div>
+ </div>
+  <div class="footer-copy">
+    © <span id="year"></span> Ahmed Helal – All Rights Reserved.
+  </div>
+ </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
