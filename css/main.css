@@ -886,7 +886,7 @@ flex-direction: column;
         position: relative;
         width: 90%;
         left: 0;
-        margin: 0 auto 30px;
+        margin: 0 auto 15px;
         top: 0;
         animation: none;
     }
@@ -977,7 +977,7 @@ flex-direction: column;
 }
 
 .image-modal img {
-  max-width: 90%;
+  max-width: 70%;
   max-height: 85%;
   border-radius: 12px;
   box-shadow: 0 0 25px #00ffff;
@@ -987,8 +987,8 @@ flex-direction: column;
 /* CLOSE BUTTON */
 .close-modal {
   position: absolute;
-  top: 20px;
-  right: 25px;
+  top: 1rem;
+  right: 7rem;
   font-size: 40px;
   color: #00ffff;
   cursor: pointer;
