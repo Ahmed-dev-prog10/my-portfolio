@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmed Helal</title>
+    <title>Ahmed-M-Helal</title>
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/bootstrap.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/main.css?v=2">
+ 
 </head>
 <body>
 
@@ -18,6 +19,9 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
+                    <button class="btn btn-outline-info mt-2 mx-2" onclick="switchLang()">
+  AR  
+</button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto ">
                     <li class="nav-item kk ">
@@ -44,6 +48,11 @@
                     <li class="nav-item ">
                      <a class="nav-link a" href="#projects">
                         <i class="fa fa-chart-bar"></i>Projects                        
+                     </a>
+                    </li>
+                      <li class="nav-item ">
+                     <a class="nav-link a" href="#services">
+                        <i class="fas fa-cogs"></i>Services                        
                      </a>
                     </li>
                     <li class="nav-item ">
@@ -111,7 +120,7 @@
                         <li>Awarded Excellent grade</li>
                         <li>Strong analytical skills</li>
                     </ul>
-                    <img src="imge/c2.jpg" alt="Course 1 Image">
+                    <img src="imge/c2.jpg" alt="Course 1 Image" >
                     <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c2.jpg')">View Image</button>
                 </div>
             </div>
@@ -244,45 +253,123 @@
     </div>
   </div>
 </section>
-
-
-
-
-
+ 
     <!-- Projects Section -->
-    <section id="projects" class="projects-section">
+    <section id="projects" class="section-container">
+  <div class="container">
+      
+      
   <h2 class="section-title">Projects</h2>
 
   <div class="projects-grid">
 
-    <!-- Project 1 -->
-    <div class="project-card">
-      <img src="imge/book.png" alt="">
-      <div class="project-info">
-        <h3>Modern Portfolio Website</h3>
-        <p>A responsive portfolio using HTML, CSS, JS & PHP.</p>
-        <div class="actions">
-          <a href="#" class="btn">Live Demo</a>
-          <a href="#" class="btn">GitHub</a>
-        </div>
-      </div>
-    </div>
+ 
 
-    <!-- Project 2 -->
-    <div class="project-card">
-      <img src="imge/bg5.jpg" alt="">
-      <div class="project-info">
-        <h3>Landing Page</h3>
-        <p>Cyber style landing page with neon effects.</p>
-        <div class="actions">
-          <a href="#" class="btn">Live Demo</a>
-          <a href="#" class="btn">GitHub</a>
-        </div>
-      </div>
-    </div>
+  <div class="project-card">
+ <div class="video-wrapper" data-src="https://www.youtube.com/embed/Lu-Q2pB5cCc" onclick="openVideo(this)">
+    <img src="imge/product1.jpg" alt="" class="video-thumb">
+    <span class="play-icon">▶</span>
+  </div>
 
+  <div class="project-info">
+    <h3>Multi-Vendor E-Commerce System</h3>
+    <p>A complete e-commerce website for 
+      selling clothing, shoes, and accessories.
+      It includes user accounts, vendor dashboards to manage products,
+ and an admin panel to control orders, approvals, and the entire system.
+    </p>
+    <div class="actions">
+<a href="#" class="btn" onclick="openDemoModal(event)">Live Demo</a>
+      <a href="https://github.com/Ahmed-dev-prog10/multi-vendor-ecommerce-system" class="btn">GitHub</a>
+    </div>
+  </div>
+</div>
+ <div class="project-card">
+  <div class="video-wrapper" data-src="https://www.youtube.com/embed/7mrvsTpSMBw" onclick="openVideo(this)">
+    <img src="imge/product2.jpg" alt="" class="video-thumb">
+    <span class="play-icon">▶</span>
+  </div>
+
+  <div class="project-info">
+    <h3>Content Management System (CMS)</h3>
+    <p>A blog website with an admin dashboard where content is reviewed before publishing.
+Users can submit articles, and admins approve or reject them to ensure content quality.</p>
+    <div class="actions">
+<a href="#" class="btn" onclick="openDemoModal(event)">Live Demo</a>
+      <a href="https://github.com/Ahmed-dev-prog10/Content-Management-System-CMS-" class="btn">GitHub</a>
+    </div>
+  </div>
+</div>
+ 
+ <div class="project-card">
+  <div class="video-wrapper" data-src="https://www.youtube.com/embed/015u3CWat20" onclick="openVideo(this)">
+    <img src="imge/produuct3.jpg" alt="" class="video-thumb">
+    <span class="play-icon">▶</span>
+  </div>
+ 
+
+  <div class="project-info">
+    <h3>Product Showcase Website</h3>
+    <p>A product showcase website for a marble and granite business.
+Admins can manage products, images, videos, and advertisements through a secure dashboard.This is a product showcase website with full admin control</p>
+    <div class="actions">
+<a href="#" class="btn" onclick="openDemoModal(event)">Live Demo</a>
+      <a href="https://github.com/Ahmed-dev-prog10/Marble-Granite-Product-Showcase-Website" class="btn">GitHub</a>
+    </div>
+  </div>
+</div>
     <!-- Repeat... -->
+</div>
+ </section>
 
+
+<section id="services" class="services-section">
+  <div class="container">
+    <h2 class="section-title">Services</h2>
+
+    <div class="services-grid">
+
+      <div class="service-card ">
+        <div class="icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>Web Development</h3>
+        <p>
+          Building fast, responsive, and scalable websites using modern technologies.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-layer-group"></i>
+        </div>
+        <h3>Full-Stack Solutions</h3>
+        <p>
+          Complete systems from database to UI with clean architecture.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3>UI / UX Design</h3>
+        <p>
+          Modern interfaces with smooth interactions and user-focused design.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-lock"></i>
+        </div>
+        <h3>Secure Back-End</h3>
+        <p>
+          Secure APIs, authentication systems, and database management.
+        </p>
+      </div>
+
+    </div>
   </div>
 </section>
 
@@ -353,7 +440,7 @@
     </div>
   </div>
 </section>
-
+ 
     <!-- Scroll To Top Button -->
     <button id="scrollTopBtn">&#8679;</button>
 <footer class="main-footer">
@@ -396,6 +483,10 @@
       </li>
 
       <li>
+           <a class="nav-link a" href="#services">
+                        <i class="fas fa-cogs"></i>                        
+                     </a> </li>
+                      <li> 
         <a href="#contact">
           <i class="fas fa-phone"></i>
         </a>
@@ -427,11 +518,45 @@
  </a>
  </div>
  </div>
+ 
   <div class="footer-copy">
     © <span id="year"></span> Ahmed Helal – All Rights Reserved.
   </div>
  </footer>
-    <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/main.js"></script>
+ <!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+  <span class="close-modal">&times;</span>
+  <img id="modalImg" src="" alt="Preview">
+</div>
+ 
+ <!-- video MODAL -->
+<div id="videoModal" class="video-modal">
+  <div class="video-box">
+    <div class="video-controls">
+      <button onclick="toggleFullscreen()" title="Fullscreen">⛶</button>
+      <button onclick="closeVideo()" title="Close">✕</button>
+    </div>
+<iframe id="modalVideo" 
+        src="" 
+        frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+</iframe>  </div>
+</div>
+
+
+ <!-- live demo MODAL -->
+<div id="demoModal" class="demo-modal">
+  <div class="demo-box">
+    <h3>🚧 Live Demo</h3>
+    <p>غير متوفر الآن<br>شاهد الفيديو لرؤية التفاصيل</p>
+    <button class="btn close-btn" onclick="closeDemoModal()">تمام</button>
+  </div>
+</div>
+
+
+     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js?v=2"></script>
 </body>
 </html>

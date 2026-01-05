@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>أحمد هلال</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/main.css?v=2">
+    <link rel="stylesheet" href="css/rtl.css?v=2">
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a href="file/Ahmed_Helal_CV.pdf" download class="btn btn-outline-info mt-2">
+            تحميل <span class="cv">السيرة الذاتية</span>
+        </a>
+        <button class="btn btn-outline-info mt-2 mx-2" onclick="switchLang()">
+   EN
+</button>
+
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse lenav" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+
+                <li class="nav-item kk">
+                    <a class="nav-link a" href="#home">
+                        <i class="fa fa-home"></i> الرئيسية
+                    </a>
+                </li>
+
+                <li class="nav-item kk">
+                    <a class="nav-link a" href="#about">
+                        <i class="fa fa-user"></i> من أنا
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link a" href="#education">
+                        <i class="fa fa-award"></i> الدورات
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link a" href="#skills">
+                        <i class="fa fa-code"></i> المهارات
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link a" href="#projects">
+                        <i class="fa fa-chart-bar"></i> المشاريع
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link a" href="#services">
+                        <i class="fas fa-cogs"></i> الخدمات
+                    </a>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link a" href="#contact">
+                        <i class="fa fa-phone"></i> تواصل معي
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Hero Section -->
+<section id="home" class="container hero-section d-flex justify-content-between align-items-center">
+
+    <div class="hero-card" id="heroCard">
+        <div class="img">
+            <img src="imge/me3.png" alt="صورتي">
+        </div>
+        <div class="info">
+            <h3><span>الاسم:</span> أحمد هلال</h3>
+            <h3><span>الوظيفة:</span> مطور ويب Full Stack</h3>
+        </div>
+    </div>
+
+    <div class="hero-text">
+        <h2>أهلاً بك في عالمي البرمجي</h2>
+        <p class="typing">
+       احوّل الأفكار المعقّدة لتطبيقات ويب سريعة، آمنة، وقابلة للتوسّع
+        </p>
+    </div>
+</section>
+
+<!-- About -->
+<section id="about" class="about-section">
+    <div class="about-content">
+        <h2>نبذة عني</h2>
+        <p>
+            أنا مطور ويب Full Stack أستمتع ببناء تطبيقات نظيفة وسريعة من الصفر.
+            أعمل على تقنيات الواجهة الأمامية مثل
+            <span>HTML, CSS, JavaScript, Vue.js, Bootstrap</span>
+            لتحويل أي تصميم إلى تجربة استخدام سلسة ومتجاوبة.
+            <br><br>
+            في جانب الخلفية أعمل باستخدام
+            <span>PHP, MySQL, Laravel</span>
+            لبناء أنظمة آمنة وقابلة للتوسع ومنظمة بشكل احترافي.
+            <br><br>
+            حاليًا أركز على تطوير مهاراتي وبناء مشاريع حقيقية لتكوين معرض أعمال قوي كمطور Full Stack محترف.
+        </p>
+    </div>
+</section>
+
+<!-- Education -->
+<section id="education" class="section-container">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">الدورات والشهادات</h2>
+
+        <div class="row g-4">
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>تخصص تكنولوجيا المعلومات</h3>
+                    <ul>
+                        <li>شهادة جامعة الأزهر</li>
+                        <li>أنظمة الحاسب والمحاكاة</li>
+                        <li>تقدير ممتاز</li>
+                        <li>مهارات تحليل قوية</li>
+                    </ul>
+                    <img src="imge/c2.jpg" alt="">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c2.jpg')">
+                        عرض الشهادة
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>تطوير الويب Full Stack</h3>
+                    <ul>
+                        <li>تدريب شامل Full Stack</li>
+                        <li>HTML, CSS, JS, Vue, PHP, MySQL, Laravel</li>
+                        <li>واجهة أمامية وخلفية</li>
+                        <li>تطبيقات عملية حقيقية</li>
+                    </ul>
+                    <img src="imge/c4.jpg" alt="">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c4.jpg')">
+                        عرض الشهادة
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-lg-4 col-md-6 col-sm-12">
+                <div class="course-card">
+                    <h3>أخلاقيات العمل والمهارات</h3>
+                    <ul>
+                        <li>تدريب مهني لسوق العمل</li>
+                        <li>تقدير ممتاز</li>
+                        <li>تواصل وعمل جماعي</li>
+                        <li>مسؤولية مهنية عالية</li>
+                    </ul>
+                    <img src="imge/c1.jpg" alt="">
+                    <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c1.jpg')">
+                        عرض الشهادة
+                    </button>
+                </div>
+            </div>
+ <div class="col-lg-4 col-md-6 col-sm-12">
+    <div class="course-card  " >
+        <h3>مهارات سوق العمل</h3>
+        <ul>
+            <li>تدريب موجه لسوق العمل</li>
+            <li>مهارات شخصية، أساسيات الحاسب والأعمال</li>
+            <li>الحصول على تقدير ممتاز</li>
+            <li>يدعم التطور الوظيفي</li>
+        </ul>
+        <img src="imge/c3.jpg" alt="صورة الكورس">
+        <button class="btn btn-outline-info mt-2" onclick="showImage('imge/c3.jpg')">
+            عرض الصورة
+        </button>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section-container" dir="rtl">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">المهارات</h2>
+
+    <div class="skills-grid">
+
+      <!-- Front End -->
+      <div class="skill-card text-end">
+        <h3>الواجهة الأمامية</h3>
+
+        <div class="progress-item" data-value="95">
+          <span class="label">HTML</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="95">
+          <span class="label">CSS</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="80">
+          <span class="label">جافاسكربت</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="85">
+          <span class="label">Bootstrap</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="75">
+          <span class="label">Vue.js</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+      </div>
+
+      <!-- Back End -->
+      <div class="skill-card text-end">
+        <h3>الواجهة الخلفية</h3>
+
+        <div class="progress-item" data-value="90">
+          <span class="label">PHP</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="85">
+          <span class="label">MySQL</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="80">
+          <span class="label">Laravel</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+      </div>
+
+      <!-- Soft Skills -->
+      <div class="skill-card text-end">
+        <h3>المهارات الشخصية</h3>
+
+        <div class="progress-item" data-value="95">
+          <span class="label">التواصل</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="90">
+          <span class="label">حل المشكلات</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+
+        <div class="progress-item" data-value="85">
+          <span class="label">إدارة الوقت</span>
+          <div class="progress-bar"><div class="fill"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="section-container" dir="rtl">
+  <div class="container">
+      
+  <h2 class="section-title">المشاريع</h2>
+
+  <div class="projects-grid">
+
+    <div class="project-card">
+      <div class="video-wrapper" 
+           data-src="https://www.youtube.com/embed/Lu-Q2pB5cCc" 
+           onclick="openVideo(this)">
+        <img src="imge/product1.jpg" alt="" class="video-thumb">
+        <span class="play-icon">▶</span>
+      </div>
+
+      <div class="project-info">
+        <h3>نظام تجارة إلكترونية متعدد البائعين</h3>
+        <p>
+          موقع تجارة إلكترونية متكامل لبيع الملابس والأحذية والإكسسوارات.
+          يشمل حسابات للمستخدمين، ولوحات تحكم للبائعين لإدارة المنتجات،
+          ولوحة تحكم إدارية لإدارة الطلبات والموافقات والتحكم الكامل في النظام.
+        </p>
+        <div class="actions">
+          <a href="#" class="btn" onclick="openDemoModal(event)">عرض تجريبي</a>
+          <a href="https://github.com/Ahmed-dev-prog10/multi-vendor-ecommerce-system" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="video-wrapper" 
+           data-src="https://www.youtube.com/embed/7mrvsTpSMBw" 
+           onclick="openVideo(this)">
+        <img src="imge/product2.jpg" alt="" class="video-thumb">
+        <span class="play-icon">▶</span>
+      </div>
+
+      <div class="project-info">
+        <h3>نظام إدارة محتوى (CMS)</h3>
+        <p>
+          موقع مدونة مزود بلوحة تحكم إدارية يتم من خلالها مراجعة المحتوى قبل النشر.
+          يمكن للمستخدمين إرسال المقالات، بينما يقوم المشرفون بالموافقة عليها
+          أو رفضها لضمان جودة المحتوى.
+        </p>
+        <div class="actions">
+          <a href="#" class="btn" onclick="openDemoModal(event)">عرض تجريبي</a>
+          <a href="https://github.com/Ahmed-dev-prog10/Content-Management-System-CMS-" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="project-card">
+      <div class="video-wrapper" 
+           data-src="https://www.youtube.com/embed/015u3CWat20" 
+           onclick="openVideo(this)">
+        <img src="imge/produuct3.jpg" alt="" class="video-thumb">
+        <span class="play-icon">▶</span>
+      </div>
+
+      <div class="project-info">
+        <h3>موقع عرض منتجات الرخام والجرانيت</h3>
+        <p>
+          موقع احترافي لعرض منتجات الرخام والجرانيت.
+          يتيح لوحة تحكم آمنة للمشرفين لإدارة المنتجات،
+          الصور، الفيديوهات، والإعلانات بكل سهولة وتحكم كامل.
+        </p>
+        <div class="actions">
+          <a href="#" class="btn" onclick="openDemoModal(event)">عرض تجريبي</a>
+          <a href="https://github.com/Ahmed-dev-prog10/Marble-Granite-Product-Showcase-Website" class="btn">GitHub</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Repeat... -->
+  </div>
+</section>
+
+
+
+<!-- Services -->
+<section id="services" class="services-section" dir="rtl">
+  <div class="container">
+    <h2 class="section-title">الخدمات</h2>
+
+    <div class="services-grid">
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-code"></i>
+        </div>
+        <h3>تطوير مواقع الويب</h3>
+        <p>
+          بناء مواقع ويب سريعة، متجاوبة، وقابلة للتوسع باستخدام أحدث التقنيات.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-layer-group"></i>
+        </div>
+        <h3>حلول متكاملة (Full Stack)</h3>
+        <p>
+          إنشاء أنظمة متكاملة من قاعدة البيانات حتى واجهة المستخدم
+          بهيكل نظيف ومنظم.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-palette"></i>
+        </div>
+        <h3>تصميم واجهات المستخدم وتجربة المستخدم</h3>
+        <p>
+          تصميم واجهات عصرية بتفاعلات سلسة
+          وتركيز كامل على تجربة المستخدم.
+        </p>
+      </div>
+
+      <div class="service-card">
+        <div class="icon">
+          <i class="fas fa-lock"></i>
+        </div>
+        <h3>أنظمة خلفية آمنة</h3>
+        <p>
+          تطوير واجهات برمجية آمنة، أنظمة تسجيل دخول،
+          وإدارة قواعد البيانات باحترافية.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Contact -->
+<section id="contact" class="section-container" dir="rtl">
+  <div class="container">
+
+    <h2 class="section-title text-center mb-5">
+     تواصل معي لنعمل معا
+    </h2>
+
+    <div class="contact-grid">
+
+      <!-- LEFT SIDE -->
+      <div class="contact-left">
+
+        <div class="profile-img">
+          <img src="imge/me3.png" alt="صورتك الشخصية">
+        </div>
+
+        <div class="social-list">
+
+          <a href="tel:01060838356" class="social">
+            <i class="fas fa-phone"></i>
+          </a>
+
+          <a href="https://wa.me/01060838356" target="_blank" class="social">
+            <i class="fab fa-whatsapp"></i>
+          </a>
+
+          <a href="https://www.instagram.com/10ah_m_ed?igsh=MWQwam83cmp1MHEweQ==" target="_blank" class="social">
+            <i class="fab fa-instagram"></i>
+          </a>
+
+          <a href="https://www.linkedin.com/in/ahmed-mahmoud-helal-769753398/" target="_blank" class="social">
+            <i class="fab fa-linkedin"></i>
+          </a>
+
+          <a href="https://github.com/Ahmed-dev-prog10" target="_blank" class="social">
+            <i class="fab fa-github"></i>
+          </a>
+
+        </div>
+      </div>
+
+      <!-- RIGHT SIDE – EMAIL FORM -->
+      <form class="contact-form" 
+            action="mailto:YOUR_EMAIL@example.com" 
+            method="POST"
+            enctype="text/plain">
+
+        <div class="form-group">
+          <input type="text" placeholder="الاسم الكامل" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <input type="email" placeholder="البريد الإلكتروني" name="email" required>
+        </div>
+
+        <div class="form-group">
+          <textarea placeholder="اكتب رسالتك هنا" name="message" rows="5" required></textarea>
+        </div>
+
+        <button type="submit" class="send-btn">إرسال الرسالة</button>
+
+      </form>
+
+    </div>
+  </div>
+</section>
+
+   <!-- Scroll To Top Button -->
+    <button id="scrollTopBtn">&#8679;</button>
+<footer class="main-footer" dir="rtl">
+  <div class="container footer-grid">
+
+    <!-- LOGO OR NAME -->
+    <div class="footer-brand">
+      <h3>أحمد هلال</h3>
+      <p>مطور ويب متكامل (Full Stack)</p>
+    </div>
+
+    <!-- ICON LINKS -->
+    <ul class="footer-links-icons">
+
+      <li>
+        <a href="#home">
+          <i class="fas fa-house"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#about">
+          <i class="fas fa-user"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#skills">
+          <i class="fas fa-code"></i>
+        </a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link a" href="#education">
+          <i class="fa fa-award"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#projects">
+          <i class="fas fa-chart-bar"></i>
+        </a>
+      </li>
+
+      <li>
+        <a class="nav-link a" href="#services">
+          <i class="fas fa-cogs"></i>
+        </a>
+      </li>
+
+      <li>
+        <a href="#contact">
+          <i class="fas fa-phone"></i>
+        </a>
+      </li>
+
+    </ul>
+
+    <!-- SOCIAL -->
+    <div class="footer-social">
+
+      <a href="tel:01060838356">
+        <i class="fas fa-phone"></i>
+      </a>
+
+      <a href="https://wa.me/01060838356" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <a href="https://www.instagram.com/10ah_m_ed?igsh=MWQwam83cmp1MHEweQ==" target="_blank">
+        <i class="fab fa-instagram"></i>
+      </a>
+
+      <a href="https://www.linkedin.com/in/ahmed-mahmoud-helal-769753398/" target="_blank">
+        <i class="fab fa-linkedin"></i>
+      </a>
+
+      <a href="https://github.com/Ahmed-dev-prog10" target="_blank">
+        <i class="fab fa-github"></i>
+      </a>
+
+    </div>
+  </div>
+
+  <div class="footer-copy">
+    © <span id="year"></span> أحمد هلال – جميع الحقوق محفوظة.
+  </div>
+</footer>
+
+ <!-- IMAGE MODAL -->
+<div id="imageModal" class="image-modal">
+  <span class="close-modal">&times;</span>
+  <img id="modalImg" src="" alt="Preview">
+</div>
+ 
+ <!-- video MODAL -->
+<div id="videoModal" class="video-modal">
+  <div class="video-box">
+    <div class="video-controls">
+      <button onclick="toggleFullscreen()" title="Fullscreen">⛶</button>
+      <button onclick="closeVideo()" title="Close">✕</button>
+    </div>
+<iframe id="modalVideo" 
+        src="" 
+        frameborder="0" 
+        allow="autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+</iframe>  </div>
+</div>
+
+
+ <!-- live demo MODAL -->
+<div id="demoModal" class="demo-modal">
+  <div class="demo-box">
+    <h3>🚧 Live Demo</h3>
+    <p>غير متوفر الآن<br>شاهد الفيديو لرؤية التفاصيل</p>
+    <button class="btn close-btn" onclick="closeDemoModal()">تمام</button>
+  </div>
+</div>
+<script src="js/bootstrap.bundle.min.js"></script>
+<script src="js/main.js?v=2"></script>
+</body>
+</html>

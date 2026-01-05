@@ -1,0 +1,198 @@
+/* =========================
+   RTL GLOBAL
+========================= */
+html[dir="rtl"],
+body {
+  direction: rtl;
+  text-align: right;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+nav {
+  left: auto;
+  right: 0;
+}
+ .lenav{
+  margin-right: 100px;
+ }
+
+.a {
+  margin-left: 0;
+  margin-right: 2px;
+}
+
+.a::after {
+  left: auto;
+  right: 0;
+}
+
+i {
+  margin-left: 0;
+  margin-right: 4px;
+}
+
+/* =========================
+   HERO SECTION
+========================= */
+.hero-section {
+  flex-direction: row-reverse;
+}
+
+.hero-card {
+    left: 600px;
+}
+
+.hero-card::before {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hero-card .info {
+  margin-left: 0;
+  margin-right: 30px;
+}
+
+.hero-text {
+  margin-left: 0;
+  margin-right: 280px;
+  text-align: center;
+}
+
+/* typing cursor */
+.hero-text .typing {
+  border-right: none;
+  border-left: 2px solid #00e5ff;
+}
+
+/* =========================
+   ABOUT SECTION
+========================= */
+.about-section {
+  background-position: left center;
+}
+
+.about-content {
+  padding-left: 0;
+  padding-right: 5%;
+  text-align: right;
+}
+
+/* =========================
+   COURSE CARD
+========================= */
+.course-card ul {
+  text-align: right;
+  padding-left: 0;
+  padding-right: 18px;
+}
+
+/* =========================
+   SKILLS
+========================= */
+.progress-item .label {
+  text-align: right;
+}
+
+/* =========================
+   PROJECTS
+========================= */
+.project-info {
+  text-align: right;
+}
+.project-info p {
+  
+  height: 120px;
+ }
+.actions {
+  flex-direction: row-reverse;
+}
+
+/* =========================
+   SERVICES
+========================= */
+.service-card {
+  text-align: center;
+}
+
+/* =========================
+   CONTACT
+========================= */
+.contact-grid {
+  direction: rtl;
+}
+
+.profile-img {
+  margin-left: 0;
+  margin-right: 2rem;
+}
+
+.social-list {
+  justify-content: flex-start;
+}
+
+/* =========================
+   FORM
+========================= */
+.contact-form input,
+.contact-form textarea {
+  text-align: right;
+}
+
+/* =========================
+   SCROLL TO TOP
+========================= */
+#scrollTopBtn {
+  right: auto;
+  left: 30px;
+}
+
+/* =========================
+   FOOTER
+========================= */
+.footer-grid {
+  text-align: right;
+}
+
+.footer-links-icons,
+.footer-social {
+  flex-direction: row-reverse;
+}
+
+/* =========================
+   MODALS
+========================= */
+.close-modal {
+  right: auto;
+  left: 25px;
+}
+
+.video-controls {
+  right: auto;
+  left: 10px;
+}
+
+/* =========================
+   RESPONSIVE RTL
+========================= */
+@media (max-width: 992px) {
+
+  .hero-section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .hero-card {
+    right: 0;
+    margin: 0 auto 30px;
+  }
+
+  .hero-text {
+    margin-right: 0;
+  }
+
+  .about-content {
+    text-align: center;
+  }
+}

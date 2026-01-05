@@ -1,4 +1,4 @@
-// Navbar background change on scroll
+ // Navbar background change on scroll
 window.addEventListener('scroll', function() {
     const navbar = document.querySelector('nav');
     if(window.scrollY > 50) {
@@ -6,10 +6,20 @@ window.addEventListener('scroll', function() {
     } else {
         navbar.classList.remove('scrolled');
     }
+    
 
     const scrollBtn = document.getElementById('scrollTopBtn');
     scrollBtn.style.display = window.scrollY > 300 ? 'block' : 'none';
 });
+// switch  Ar/En
+function switchLang() {
+  const current = document.documentElement.lang;
+  if (current === "en") {
+    window.location.href = "home_ar.html";
+  } else {
+    window.location.href = "home.html";
+  }
+}
 
 // Scroll to top
 document.getElementById('scrollTopBtn').addEventListener('click', function() {
@@ -58,11 +68,42 @@ document.addEventListener('mouseup', function(){
         card.style.animation = 'swing 3s ease-in-out infinite';
     }
 });
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("modalImg");
+const closeBtn = document.querySelector(".close-modal");
+
 function showImage(src) {
-    // نافذة جديدة للصورة
-    window.open(src, "_blank");
+  modal.style.display = "flex";
+  modalImg.src = src;
+  document.body.style.overflow = "hidden"; // يمنع اسكرول
 }
-   
+
+// إغلاق
+closeBtn.onclick = closeModal;
+modal.onclick = (e) => { if (e.target === modal) closeModal(); };
+
+function closeModal() {
+  modal.style.display = "none";
+  modalImg.src = "";
+  document.body.style.overflow = "auto";
+}
+// Services animation
+const serviceCards = document.querySelectorAll('.service-card');
+
+const servicesObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('show');
+    } else {
+      entry.target.classList.remove('show');
+    }
+  });
+}, {
+  threshold: 0.2
+});
+
+serviceCards.forEach(card => servicesObserver.observe(card));
+ 
 
 
 
@@ -131,6 +172,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 //       project//
 const cards = document.querySelectorAll('.project-card');
+
 const observer = new IntersectionObserver(entries => {
   entries.forEach(e => {
     if (e.isIntersecting) e.target.classList.add('show');
@@ -138,6 +180,50 @@ const observer = new IntersectionObserver(entries => {
 });
 
 cards.forEach(c => observer.observe(c));
+// فتح الفيديو في المودال (لروابط اليوتيوب)
+function openVideo(element) {
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('modalVideo');
+    let videoSrc = element.getAttribute('data-src');
+
+    // التأكد من أن الرابط يحتوي على autoplay
+    if (!videoSrc.includes('autoplay=1')) {
+        const separator = videoSrc.includes('?') ? '&' : '?';
+        videoSrc = videoSrc + separator + "autoplay=1&mute=1";
+    }
+
+    iframe.src = videoSrc;
+    modal.style.display = "flex";
+}
+
+// وظيفة إغلاق الفيديو
+function closeVideo() {
+    const modal = document.getElementById('videoModal');
+    const iframe = document.getElementById('modalVideo');
+    modal.style.display = "none";
+    iframe.src = ""; // مهم جداً لإيقاف الصوت والفيديو
+}
+
+// زر تكبير الشاشة (يعمل مع الـ iframe)
+function toggleFullscreen() {
+    const iframe = document.getElementById('modalVideo');
+    if (iframe.requestFullscreen) {
+        iframe.requestFullscreen();
+    } else if (iframe.webkitRequestFullscreen) {
+        iframe.webkitRequestFullscreen();
+    }
+}
+function openDemoModal(e) {
+  e.preventDefault(); // يمنع التنقل
+  document.getElementById("demoModal").style.display = "flex";
+  document.body.style.overflow = "hidden";
+}
+
+function closeDemoModal() {
+  document.getElementById("demoModal").style.display = "none";
+  document.body.style.overflow = "auto";
+}
+
 
 
 document.getElementById("year").textContent = new Date().getFullYear();
