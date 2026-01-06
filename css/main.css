@@ -205,9 +205,9 @@ i{
 }
 
 /* موبايل */
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .about-section {
-        background: none;     /* fixed ساعات بيهنج على الموبايل */
+        background: none;      
     }
 }
 .course-card {
